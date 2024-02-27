@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+    var massive = [];
+    var rounds = 1000;
+    var red_black = 0;
+    var max_length = 0;
+    var length = 0;
+    var i;
+    for (i = 0; i <= rounds; i++) {
+        red_black = Math.round(Math.random() * 36); // добавляем в n числа от 0 до 36 включительно
+        if (red_black != 0) {
+            red_black = (red_black % 2) * 2 - 1; // такое выражение всегда делит с остатком либо 1 или 0
+        }
+        massive.push(red_black);
+    }
+
+    for (i = 0; i < massive.length; i++) {
+        if(massive[i] == 1) {
+            length = 0;
+            while (i < massive.length && massive[i] == 1) {
+                i++;
+                length++;
+            }
+            if (length > max_length) {
+                max_length = length;
+            }
+        }
+    }
+alert('Максимально длинная последовательность: ' + max_length);
+</script>

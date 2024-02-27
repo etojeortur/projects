@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /*var a = parseInt(prompt('А = '));
+    var b = parseInt(prompt('B = '));
+    var c = parseInt(prompt('C = '));
+    if ( isNaN(a) || isNaN(b) || isNaN(c)) {  // комманда isNan проверяет, является ли ЭТО числом, || означает "ИЛИ"
+        alert('Вам нужно ввести чилсло!');
+    } else {
+        alert('Молодец, скоро мы эти числа будем использовать :)');
+    }
+     */
+
+    var shoot = parseInt(prompt('Введите угол выстрела:'));
+    var target = 33;
+    var target2 = 76;
+    if ( (shoot <= target) && (shoot >= 1) || (shoot >= target2) && (shoot <= 140)) { // знак && означает "И"
+        alert('Цель поражена!');
+    } else {
+        alert('Мимо! Пробуй еще раз.');
+    }
+</script>

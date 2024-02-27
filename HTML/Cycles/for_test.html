@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+    var summa = parseInt(prompt('Введите сумму вклада: '));
+    var procent = parseInt(prompt('Процентная ставка %: '));
+    var srok = parseInt(prompt('Срок вклада, лет: '));
+    for (day = 1; day <= srok; day++) { // первое это начальное значение, второе это условие, третье это действие для цикла
+        summa = summa + summa * procent / 100;
+        alert('Прошло лет ' + day + '.' + 'Сумма на счету: ' + summa);
+    }
+
+</script>
