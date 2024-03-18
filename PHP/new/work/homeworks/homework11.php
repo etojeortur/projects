@@ -3,8 +3,7 @@ $hour = 1;
 $time = '';
 if ($hour > 23 | $hour < 0) {
     echo 'Ошибка: Введи время от 00 до 23 часов.';
-}
-if ($hour >= 00 & $hour <= 10 & $hour < 24 & $hour < 24 & $hour > -1) {
+}elseif ($hour >= 00 & $hour <= 10 & $hour < 24 & $hour < 24 & $hour > -1) {
     $time = 0;
 }elseif ($hour >= 11 & $hour <= 15 & $hour < 24 & $hour > -1) {
     $time = 1;
