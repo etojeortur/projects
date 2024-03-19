@@ -23,13 +23,17 @@ $person3 = [
     'is_married' => false,
     'year_dating' => 2015,
 ];
-print_r($person['year_dating']);
-$person3['is_married'] = true;
-echo "<br>";
-print_r($person3['is_married']);
-$person['travel'] = 'Abkhazia';
-echo "<br>";
-print_r($person['travel']);
-echo "<br>";
-print_r($person2);
+$person4 = [
+    'name' => 'Sergey',
+    'age' => 26,
+    'city' => 'Kazan',
+    'hobby' => 'making game trailers',
+    'is_married' => false,
+    'year_dating' => 2021,
+];
 
+// foreach работает только с массивами и объектами
+foreach ($person as $key => $item) { // сначала идет массив, $key с => $item используется как создание ключа и элемента в цикле
+    echo $key . ': ';
+    echo $item . "\n";
+}
