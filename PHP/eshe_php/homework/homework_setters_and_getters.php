@@ -2,7 +2,7 @@
 class Animal {
     public $type = 'Cat';
     public $name = 'Barsik';
-    public $age = 6;
+    public $age = 5;
     public function setType($animalType)
     {
         $this->type = $animalType;
@@ -39,3 +39,10 @@ $pet4 = new Animal;
 $pet4->setType('Fish');
 $pet4->setName('Midas');
 echo "Мое четвертое домашнее животное: $pet4->type по кличке $pet4->name.";
+echo "<br>" . "<hr>";
+
+if ($pet4->age == 5) {
+    echo "У моего домашнего животного $pet4->type по кличке $pet4->name сегодня юбилей!";
+} else {
+    echo 'Еще не юбилей...';
+}
