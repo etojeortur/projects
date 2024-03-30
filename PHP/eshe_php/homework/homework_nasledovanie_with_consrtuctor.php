@@ -18,22 +18,34 @@ class Goods
 
 class Shoes extends Goods
 {
-
+    public function sayCategory()
+    {
+        echo 'Это категория обуви.';
+    }
 }
 
 class OuterWear extends Goods
 {
-
+    public function sayCategory()
+    {
+        echo 'Это категория верхней одежды.';
+    }
 }
 
 class UnderWear extends Goods
 {
-
+    public function sayCategory()
+    {
+        echo 'Это категория нижней одежды.';
+    }
 }
 
 class Hats extends Goods
 {
-
+    public function sayCategory()
+    {
+        echo 'Это категория головных уборов.';
+    }
 }
 
 $shoe1 = new Shoes('Кроссовки', 'Адидас', 'Черный и белый', 42.5);
