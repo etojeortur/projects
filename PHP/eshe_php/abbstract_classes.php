@@ -2,9 +2,9 @@
 // Из абстрактных классов (abstract) нельзя создавать объекты, можно, например, от него наследовать
 abstract class People
 {
-    public $name = 'Artur';
-    public $age = 25;
-    public $job = 'Developer';
+    public string $name = 'Artur';
+    public int $age = 25;
+    public string $job = 'Developer';
     public function __construct(string $name, int $age, string $job)
     {
         $this->name = $name;
