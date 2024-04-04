@@ -6,3 +6,19 @@ function sayHello() { //сигнатура функции
     echo $name;
 }
 sayHello();
+
+// strlen(), rand(min, max)
+//strlen считает кол-во символов в строке
+$company1 = 'Apple';
+$company2 = 'Samsung';
+
+$strCount = strlen($company1 . $company2);
+print_r($strCount);
+
+// rand генерирует случайное число от МИН до МАКС
+$myRand = rand(1, 6);
+if ($myRand == 3) {
+    print_r('Ай бля маслину поймал!');
+} else {
+    print_r('Повезло, хаха)))');
+}

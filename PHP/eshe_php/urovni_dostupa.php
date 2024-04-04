@@ -15,19 +15,18 @@ class Plant
         $this->title = $title;
         $this->season = $season;
     }
-
 }
 
 class Rose extends Plant
 {
     public function someCalc(string $season)
     {
-        $this->season = 'Круглый год';
+        $this->season = '';
     }
 }
 
-$rose1 = new Rose('Роза', 'Красный', 'Лето');
+$rose1 = new Rose('Роза', 'Лето');
 //$rose1->color; не смогу обратиться, так как он приватный
 
-$plant1 = new Plant('Папоротник', 'Зеленый', 'Весна');
-//$plant1->color; тоже не смогу обратиться, несмотря на то, что это объект от класса Plant
+$plant1 = new Plant('Паппоротник', 'Зеленый', 'Весна');
+//$plant1->color; тоже не смогу обратиться, несмотря на то, что это объект класса Plant
