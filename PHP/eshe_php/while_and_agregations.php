@@ -1,6 +1,6 @@
 <?php
 
-// Реализуйте функцию чтобы она выводила числа в обратном порядке.
+// (1)Реализуйте функцию чтобы она выводила числа в обратном порядке.
 // Для этого нужно идти от верхней границы к нижней.
 // То есть, счетчик должен быть инициализирован максимальным значением,
 // а в теле цикла его нужно уменьшать до нижней границы.
@@ -20,7 +20,8 @@ printNumbers(4);
 
 
 // Агрегация данных (чисел)
-// Реализуйте функцию multiplyNumbersFromRange(), которая перемножает числа
+
+// (2)Реализуйте функцию multiplyNumbersFromRange(), которая перемножает числа
 // в указанном диапазоне включая границы диапазона.
 function multiplyNumbersFromRange(int $start, $finish) : int
 {
@@ -36,7 +37,8 @@ function multiplyNumbersFromRange(int $start, $finish) : int
 
 
 // Агрегация данных (строк)
-// Реализуйте функцию joinNumbersFromRange(), которая объединяет все числа из диапазона в строку:
+
+// (3)Реализуйте функцию joinNumbersFromRange(), которая объединяет все числа из диапазона в строку:
 function joinNumbersFromRange(int $start, $finish) : string
 {
     $i = $start;
@@ -50,3 +52,36 @@ function joinNumbersFromRange(int $start, $finish) : string
 }
 
 print_r(joinNumbersFromRange(1, 9));
+
+
+// (4)Реализуйте функцию printReversedWordBySymbol(), которая печатает переданное слово посимвольно,
+// в обратном порядке.
+function printReversedWordBySymbol(string $string)
+{
+    $i = strlen($string) - 1; // инициализировали счетчку последний индекс через -1
+
+    while ($i >= 0) {
+        print_r($string[$i] . "\n");
+        $i--;
+    }
+}
+
+
+// (5)Реализуйте функцию функцию, которая считает сколько раз входит буква в предложение,
+// так чтобы регистр букв был не важен
+function countChars($str, $char)
+{
+    $i = 0;
+    $count = 0;
+    $str = strtolower($str); // прировнялили строку к ниж регистру
+    $char = strtolower($char); // прировняли искомый символ к ниж регистру
+
+    while ($i < strlen($str)) {
+        if ($str[$i] === $char) {
+            $count++; // увеличивается только при истине условия
+        }
+        $i++; // увиличивается в любом случае
+    }
+    return $count;
+}
+
