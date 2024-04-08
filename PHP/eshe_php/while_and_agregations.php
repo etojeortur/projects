@@ -6,7 +6,8 @@
 // а в теле цикла его нужно уменьшать до нижней границы.
 function printNumbers(int $number)
 {
-    $i = 3;
+    $i = 3; // сначала инициализируется счетчик
+
     while ($i <= $number && $i > 0) {
         print_r($i);
         print_r("\n");
@@ -23,8 +24,8 @@ printNumbers(4);
 // в указанном диапазоне включая границы диапазона.
 function multiplyNumbersFromRange(int $start, $finish) : int
 {
-    $i = $start;
-    $multi = 1;
+    $i = $start; // счетчик равен старту
+    $multi = 1; // нейтральный знак для умножения
 
     while ($i <= $finish) {
         $multi = $multi * $i;
