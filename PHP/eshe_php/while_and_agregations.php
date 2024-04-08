@@ -19,7 +19,7 @@ function printNumbers(int $number)
 printNumbers(4);
 
 
-// Агрегация данных (чисел)
+// Агрегация данных (чисел) \\
 
 // (2)Реализуйте функцию multiplyNumbersFromRange(), которая перемножает числа
 // в указанном диапазоне включая границы диапазона.
@@ -36,7 +36,7 @@ function multiplyNumbersFromRange(int $start, $finish) : int
 }
 
 
-// Агрегация данных (строк)
+// Агрегация данных (строк) \\
 
 // (3)Реализуйте функцию joinNumbersFromRange(), которая объединяет все числа из диапазона в строку:
 function joinNumbersFromRange(int $start, $finish) : string
@@ -66,6 +66,8 @@ function printReversedWordBySymbol(string $string)
     }
 }
 
+
+// Уловие внутри цикла \\
 
 // (5)Реализуйте функцию функцию, которая считает сколько раз входит буква в предложение,
 // так чтобы регистр букв был не важен
