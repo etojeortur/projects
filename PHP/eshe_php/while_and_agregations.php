@@ -9,6 +9,7 @@ function printNumbers(int $number)
     $i = 3; // сначала инициализируется счетчик
 
     while ($i <= $number && $i > 0) {
+
         print_r($i);
         print_r("\n");
         $i--;
