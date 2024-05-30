@@ -4,6 +4,7 @@ namespace Oop;
 
 class Visitor
 {
+    use HasRest;
     private string $name;
     private int $age;
     private array $hours;
